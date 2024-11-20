@@ -1,0 +1,1541 @@
+{
+  "Participantes": [
+    {
+      "id": 2,
+      "nombre": "Carlos",
+      "apellido": "Gomez",
+      "fechaDeNacimiento": "2002-05-12",
+      "correo": "abrahamcarranza2602@gmail.com",
+      "contrasena": "12345679",
+      "listaMascota": [
+        {
+          "id": 1,
+          "nombre": "Piolín",
+          "especie": "Ave",
+          "color": "Amarillo",
+          "tipo": "Propia",
+          "ubicacion": "Baruta, Caracas",
+          "edad": 1,
+          "periodo": "Años",
+          "raza": "Canario",
+          "descripcion": "Piolín es un canario con un canto muy hermoso.",
+          "rutaImagen": "../Imagenes/piolin.jpg"
+        },
+        {
+          "id": 2,
+          "nombre": "Bella",
+          "especie": "Perro",
+          "color": "Marron",
+          "tipo": "Callejera",
+          "ubicacion": "Bellas Artes, Caracas",
+          "edad": "5",
+          "periodo": "Años",
+          "raza": "Golden Retriever",
+          "descripcion": "Bella es una perra muy inteligente y leal.",
+          "rutaImagen": "../Imagenes/unnamed.jpg",
+          "ubicacionExacta": {
+            "lat": 10.498930956839727,
+            "lng": -66.89781188964844,
+            "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+          }
+        },
+        {
+          "id": 3,
+          "nombre": "Tom",
+          "especie": "Gato",
+          "color": "Gris",
+          "tipo": "Propia",
+          "ubicacion": "El Hatillo, Caracas",
+          "edad": 4,
+          "periodo": "Años",
+          "raza": "Siamés",
+          "descripcion": "Tom es un gato muy independiente y misterioso.",
+          "rutaImagen": "../Imagenes/tom.jpg"
+        }
+      ],
+      "listaAnuncios": [
+        {
+          "participante": {
+            "id": 2,
+            "nombre": "Carlos",
+            "apellido": "Gomez",
+            "fechaDeNacimiento": "2002-05-12",
+            "correo": "abrahamcarranza2602@gmail.com",
+            "contrasena": "12345679",
+            "listaMascota": [
+              {
+                "id": 1,
+                "nombre": "Piolín",
+                "especie": "Ave",
+                "color": "Amarillo",
+                "tipo": "Propia",
+                "ubicacion": "Baruta, Caracas",
+                "edad": 1,
+                "periodo": "Años",
+                "raza": "Canario",
+                "descripcion": "Piolín es un canario con un canto muy hermoso.",
+                "rutaImagen": "../Imagenes/piolin.jpg"
+              },
+              {
+                "id": 2,
+                "nombre": "Bella",
+                "especie": "Perro",
+                "color": "Marrón",
+                "tipo": "Callejera",
+                "ubicacion": "Bellas Artes, Caracas",
+                "edad": 5,
+                "periodo": "Años",
+                "raza": "Golden Retriever",
+                "descripcion": "Bella es una perra muy inteligente y leal.",
+                "rutaImagen": "../Imagenes/bella.jpg",
+                "ubicacionExacta": {
+                  "lat": 10.498930956839727,
+                  "lng": -66.89781188964844,
+                  "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+                }
+              },
+              {
+                "id": 3,
+                "nombre": "Tom",
+                "especie": "Gato",
+                "color": "Gris",
+                "tipo": "Propia",
+                "ubicacion": "El Hatillo, Caracas",
+                "edad": 4,
+                "periodo": "Años",
+                "raza": "Siamés",
+                "descripcion": "Tom es un gato muy independiente y misterioso.",
+                "rutaImagen": "../Imagenes/tom.jpg"
+              }
+            ],
+            "listaAnuncios": [],
+            "listaSolicitudes": []
+          },
+          "mascota": {
+            "id": 2,
+            "nombre": "Bella",
+            "especie": "Perro",
+            "color": "Marrón",
+            "tipo": "Callejera",
+            "ubicacion": "Bellas Artes, Caracas",
+            "edad": 5,
+            "periodo": "Años",
+            "raza": "Golden Retriever",
+            "descripcion": "Bella es una perra muy inteligente y leal.",
+            "rutaImagen": "../Imagenes/bella.jpg",
+            "ubicacionExacta": {
+              "lat": 10.498930956839727,
+              "lng": -66.89781188964844,
+              "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+            }
+          }
+        },
+        {
+          "participante": {
+            "id": 5,
+            "nombre": "Sofia",
+            "apellido": "Gonzalez",
+            "fechaDeNacimiento": "2000-09-15",
+            "correo": "nmrada.22@est.ucab.edu.ve",
+            "contrasena": "12345682",
+            "listaMascota": [
+              {
+                "id": 1,
+                "nombre": "Luna",
+                "especie": "Gato",
+                "color": "Blanca",
+                "tipo": "Callejera",
+                "ubicacion": "Bello Monte, Caracas",
+                "edad": 3,
+                "periodo": "Años",
+                "raza": "Angora",
+                "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                "rutaImagen": "../Imagenes/luna.jpg",
+                "ubicacionExacta": {
+                  "lat": 10.447868536187556,
+                  "lng": -66.92396879196167,
+                  "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                }
+              },
+              {
+                "id": 2,
+                "nombre": "Rocky",
+                "especie": "Perro",
+                "color": "Blanco",
+                "tipo": "Propia",
+                "ubicacion": "Chacao, Caracas",
+                "edad": 6,
+                "periodo": "Años",
+                "raza": "Dálmata",
+                "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                "rutaImagen": "../Imagenes/rocky.jpg"
+              },
+              {
+                "id": 3,
+                "nombre": "Coco",
+                "especie": "Ave",
+                "color": "Verde",
+                "tipo": "Extraviada",
+                "ubicacion": "Coche, Caraca",
+                "edad": 4,
+                "periodo": "Años",
+                "raza": "Loro",
+                "descripcion": "Coco es un loro muy hablador y sociable.",
+                "rutaImagen": "../Imagenes/coco.jpg"
+              }
+            ],
+            "listaAnuncios": [
+              {
+                "participante": {
+                  "id": 5,
+                  "nombre": "Sofia",
+                  "apellido": "Gonzalez",
+                  "fechaDeNacimiento": "2000-09-15",
+                  "correo": "nmrada.22@est.ucab.edu.ve",
+                  "contrasena": "12345682",
+                  "listaMascota": [
+                    {
+                      "id": 1,
+                      "nombre": "Luna",
+                      "especie": "Gato",
+                      "color": "Blanca",
+                      "tipo": "Callejera",
+                      "ubicacion": "Bello Monte, Caracas",
+                      "edad": 3,
+                      "periodo": "Años",
+                      "raza": "Angora",
+                      "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                      "rutaImagen": "../Imagenes/luna.jpg",
+                      "ubicacionExacta": {
+                        "lat": 10.447868536187556,
+                        "lng": -66.92396879196167,
+                        "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                      }
+                    },
+                    {
+                      "id": 2,
+                      "nombre": "Rocky",
+                      "especie": "Perro",
+                      "color": "Blanco",
+                      "tipo": "Propia",
+                      "ubicacion": "Chacao, Caracas",
+                      "edad": 6,
+                      "periodo": "Años",
+                      "raza": "Dálmata",
+                      "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                      "rutaImagen": "../Imagenes/rocky.jpg"
+                    },
+                    {
+                      "id": 3,
+                      "nombre": "Coco",
+                      "especie": "Ave",
+                      "color": "Verde",
+                      "tipo": "Extraviada",
+                      "ubicacion": "Coche, Caraca",
+                      "edad": 4,
+                      "periodo": "Años",
+                      "raza": "Loro",
+                      "descripcion": "Coco es un loro muy hablador y sociable.",
+                      "rutaImagen": "../Imagenes/coco.jpg"
+                    }
+                  ],
+                  "listaAnuncios": [],
+                  "listaSolicitudes": []
+                },
+                "mascota": {
+                  "id": 1,
+                  "nombre": "Luna",
+                  "especie": "Gato",
+                  "color": "Blanca",
+                  "tipo": "Callejera",
+                  "ubicacion": "Bello Monte, Caracas",
+                  "edad": 3,
+                  "periodo": "Años",
+                  "raza": "Angora",
+                  "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                  "rutaImagen": "../Imagenes/luna.jpg",
+                  "ubicacionExacta": {
+                    "lat": 10.447868536187556,
+                    "lng": -66.92396879196167,
+                    "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                  }
+                }
+              }
+            ],
+            "listaSolicitudes": []
+          },
+          "mascota": {
+            "id": 3,
+            "nombre": "Coco",
+            "especie": "Ave",
+            "color": "Verde",
+            "tipo": "Extraviada",
+            "ubicacion": "Coche, Caraca",
+            "edad": 4,
+            "periodo": "Años",
+            "raza": "Loro",
+            "descripcion": "Coco es un loro muy hablador y sociable.",
+            "rutaImagen": "../Imagenes/coco.jpg"
+          }
+        },
+        {
+          "participante": {
+            "id": 2,
+            "nombre": "Carlos",
+            "apellido": "Gomez",
+            "fechaDeNacimiento": "2002-05-12",
+            "correo": "abrahamcarranza2602@gmail.com",
+            "contrasena": "12345679",
+            "listaMascota": [
+              {
+                "id": 1,
+                "nombre": "Piolín",
+                "especie": "Ave",
+                "color": "Amarillo",
+                "tipo": "Propia",
+                "ubicacion": "Baruta, Caracas",
+                "edad": 1,
+                "periodo": "Años",
+                "raza": "Canario",
+                "descripcion": "Piolín es un canario con un canto muy hermoso.",
+                "rutaImagen": "../Imagenes/piolin.jpg"
+              },
+              {
+                "id": 2,
+                "nombre": "Bella",
+                "especie": "Perro",
+                "color": "Marron",
+                "tipo": "Callejera",
+                "ubicacion": "Bellas Artes, Caracas",
+                "edad": "5",
+                "periodo": "Años",
+                "raza": "Golden Retriever",
+                "descripcion": "Bella es una perra muy inteligente y leal.",
+                "rutaImagen": "../Imagenes/unnamed.jpg",
+                "ubicacionExacta": {
+                  "lat": 10.498930956839727,
+                  "lng": -66.89781188964844,
+                  "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+                }
+              },
+              {
+                "id": 3,
+                "nombre": "Tom",
+                "especie": "Gato",
+                "color": "Gris",
+                "tipo": "Propia",
+                "ubicacion": "El Hatillo, Caracas",
+                "edad": 4,
+                "periodo": "Años",
+                "raza": "Siamés",
+                "descripcion": "Tom es un gato muy independiente y misterioso.",
+                "rutaImagen": "../Imagenes/tom.jpg"
+              }
+            ],
+            "listaAnuncios": [
+              {
+                "participante": {
+                  "id": 2,
+                  "nombre": "Carlos",
+                  "apellido": "Gomez",
+                  "fechaDeNacimiento": "2002-05-12",
+                  "correo": "abrahamcarranza2602@gmail.com",
+                  "contrasena": "12345679",
+                  "listaMascota": [
+                    {
+                      "id": 1,
+                      "nombre": "Piolín",
+                      "especie": "Ave",
+                      "color": "Amarillo",
+                      "tipo": "Propia",
+                      "ubicacion": "Baruta, Caracas",
+                      "edad": 1,
+                      "periodo": "Años",
+                      "raza": "Canario",
+                      "descripcion": "Piolín es un canario con un canto muy hermoso.",
+                      "rutaImagen": "../Imagenes/piolin.jpg"
+                    },
+                    {
+                      "id": 2,
+                      "nombre": "Bella",
+                      "especie": "Perro",
+                      "color": "Marrón",
+                      "tipo": "Callejera",
+                      "ubicacion": "Bellas Artes, Caracas",
+                      "edad": 5,
+                      "periodo": "Años",
+                      "raza": "Golden Retriever",
+                      "descripcion": "Bella es una perra muy inteligente y leal.",
+                      "rutaImagen": "../Imagenes/bella.jpg",
+                      "ubicacionExacta": {
+                        "lat": 10.498930956839727,
+                        "lng": -66.89781188964844,
+                        "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+                      }
+                    },
+                    {
+                      "id": 3,
+                      "nombre": "Tom",
+                      "especie": "Gato",
+                      "color": "Gris",
+                      "tipo": "Propia",
+                      "ubicacion": "El Hatillo, Caracas",
+                      "edad": 4,
+                      "periodo": "Años",
+                      "raza": "Siamés",
+                      "descripcion": "Tom es un gato muy independiente y misterioso.",
+                      "rutaImagen": "../Imagenes/tom.jpg"
+                    }
+                  ],
+                  "listaAnuncios": [],
+                  "listaSolicitudes": []
+                },
+                "mascota": {
+                  "id": 2,
+                  "nombre": "Bella",
+                  "especie": "Perro",
+                  "color": "Marrón",
+                  "tipo": "Callejera",
+                  "ubicacion": "Bellas Artes, Caracas",
+                  "edad": 5,
+                  "periodo": "Años",
+                  "raza": "Golden Retriever",
+                  "descripcion": "Bella es una perra muy inteligente y leal.",
+                  "rutaImagen": "../Imagenes/bella.jpg",
+                  "ubicacionExacta": {
+                    "lat": 10.498930956839727,
+                    "lng": -66.89781188964844,
+                    "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+                  }
+                }
+              },
+              {
+                "participante": {
+                  "id": 5,
+                  "nombre": "Sofia",
+                  "apellido": "Gonzalez",
+                  "fechaDeNacimiento": "2000-09-15",
+                  "correo": "nmrada.22@est.ucab.edu.ve",
+                  "contrasena": "12345682",
+                  "listaMascota": [
+                    {
+                      "id": 1,
+                      "nombre": "Luna",
+                      "especie": "Gato",
+                      "color": "Blanca",
+                      "tipo": "Callejera",
+                      "ubicacion": "Bello Monte, Caracas",
+                      "edad": 3,
+                      "periodo": "Años",
+                      "raza": "Angora",
+                      "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                      "rutaImagen": "../Imagenes/luna.jpg",
+                      "ubicacionExacta": {
+                        "lat": 10.447868536187556,
+                        "lng": -66.92396879196167,
+                        "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                      }
+                    },
+                    {
+                      "id": 2,
+                      "nombre": "Rocky",
+                      "especie": "Perro",
+                      "color": "Blanco",
+                      "tipo": "Propia",
+                      "ubicacion": "Chacao, Caracas",
+                      "edad": 6,
+                      "periodo": "Años",
+                      "raza": "Dálmata",
+                      "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                      "rutaImagen": "../Imagenes/rocky.jpg"
+                    },
+                    {
+                      "id": 3,
+                      "nombre": "Coco",
+                      "especie": "Ave",
+                      "color": "Verde",
+                      "tipo": "Extraviada",
+                      "ubicacion": "Coche, Caraca",
+                      "edad": 4,
+                      "periodo": "Años",
+                      "raza": "Loro",
+                      "descripcion": "Coco es un loro muy hablador y sociable.",
+                      "rutaImagen": "../Imagenes/coco.jpg"
+                    }
+                  ],
+                  "listaAnuncios": [
+                    {
+                      "participante": {
+                        "id": 5,
+                        "nombre": "Sofia",
+                        "apellido": "Gonzalez",
+                        "fechaDeNacimiento": "2000-09-15",
+                        "correo": "nmrada.22@est.ucab.edu.ve",
+                        "contrasena": "12345682",
+                        "listaMascota": [
+                          {
+                            "id": 1,
+                            "nombre": "Luna",
+                            "especie": "Gato",
+                            "color": "Blanca",
+                            "tipo": "Callejera",
+                            "ubicacion": "Bello Monte, Caracas",
+                            "edad": 3,
+                            "periodo": "Años",
+                            "raza": "Angora",
+                            "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                            "rutaImagen": "../Imagenes/luna.jpg",
+                            "ubicacionExacta": {
+                              "lat": 10.447868536187556,
+                              "lng": -66.92396879196167,
+                              "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                            }
+                          },
+                          {
+                            "id": 2,
+                            "nombre": "Rocky",
+                            "especie": "Perro",
+                            "color": "Blanco",
+                            "tipo": "Propia",
+                            "ubicacion": "Chacao, Caracas",
+                            "edad": 6,
+                            "periodo": "Años",
+                            "raza": "Dálmata",
+                            "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                            "rutaImagen": "../Imagenes/rocky.jpg"
+                          },
+                          {
+                            "id": 3,
+                            "nombre": "Coco",
+                            "especie": "Ave",
+                            "color": "Verde",
+                            "tipo": "Extraviada",
+                            "ubicacion": "Coche, Caraca",
+                            "edad": 4,
+                            "periodo": "Años",
+                            "raza": "Loro",
+                            "descripcion": "Coco es un loro muy hablador y sociable.",
+                            "rutaImagen": "../Imagenes/coco.jpg"
+                          }
+                        ],
+                        "listaAnuncios": [],
+                        "listaSolicitudes": []
+                      },
+                      "mascota": {
+                        "id": 1,
+                        "nombre": "Luna",
+                        "especie": "Gato",
+                        "color": "Blanca",
+                        "tipo": "Callejera",
+                        "ubicacion": "Bello Monte, Caracas",
+                        "edad": 3,
+                        "periodo": "Años",
+                        "raza": "Angora",
+                        "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                        "rutaImagen": "../Imagenes/luna.jpg",
+                        "ubicacionExacta": {
+                          "lat": 10.447868536187556,
+                          "lng": -66.92396879196167,
+                          "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                        }
+                      }
+                    }
+                  ],
+                  "listaSolicitudes": []
+                },
+                "mascota": {
+                  "id": 3,
+                  "nombre": "Coco",
+                  "especie": "Ave",
+                  "color": "Verde",
+                  "tipo": "Extraviada",
+                  "ubicacion": "Coche, Caraca",
+                  "edad": 4,
+                  "periodo": "Años",
+                  "raza": "Loro",
+                  "descripcion": "Coco es un loro muy hablador y sociable.",
+                  "rutaImagen": "../Imagenes/coco.jpg"
+                }
+              }
+            ],
+            "listaSolicitudes": []
+          },
+          "mascota": {
+            "id": 4,
+            "nombre": "A",
+            "especie": "Perro",
+            "color": "Amarrillo",
+            "tipo": "Callejera",
+            "ubicacion": "F4JC+RCG, Av. Caroní, Caracas 1080, Miranda, Venezuela",
+            "edad": "2",
+            "periodo": "Años",
+            "raza": "Labrador",
+            "descripcion": "A",
+            "rutaImagen": "../Imagenes/unnamed (4).jpg",
+            "ubicacionExacta": {
+              "lat": 10.482069062030178,
+              "lng": -66.87887942061425,
+              "name": "Selected Location"
+            }
+          },
+          "tipo": "Callejera"
+        }
+      ],
+      "listaSolicitudes": []
+    },
+    {
+      "id": 3,
+      "nombre": "Nahomy",
+      "apellido": "Rada",
+      "fechaDeNacimiento": "1999-07-23",
+      "correo": "dvrodriguez.22@est.ucab.edu.ve",
+      "contrasena": "1234",
+      "listaMascota": [],
+      "listaAnuncios": [],
+      "listaSolicitudes": [
+        {
+          "nroId": 1,
+          "mascota": {
+            "id": 2,
+            "nombre": "Michi",
+            "especie": "Gato",
+            "color": "Blanco",
+            "tipo": "Callejera",
+            "ubicacion": "Chacao, Caracas",
+            "edad": 2,
+            "periodo": "Años",
+            "raza": "Persa",
+            "descripcion": "Michi es una gata muy tranquila y cariñosa.",
+            "rutaImagen": "../Imagenes/michi.jpg",
+            "ubicacionExacta": {
+              "lat": 10.485279968570367,
+              "lng": -66.85523986816406,
+              "name": "F4PV+4WC, Caracas 1064, Miranda, Venezuela"
+            }
+          },
+          "estatus": "enviada",
+          "vivienda": "Casa",
+          "tipoVivienda": "Propia",
+          "conJardin": true,
+          "autorizadoEnAlquiler": true,
+          "horarioLaboral": [
+            "08:00",
+            "17:00",
+            [
+              "Lunes",
+              "Martes",
+              "Miércoles"
+            ]
+          ],
+          "situacionVacaciones": "Se quedaría con mi mamá",
+          "motivoAdopcion": "Por compañía",
+          "familiarResponsable": "Yo",
+          "desicionCompartida": true,
+          "lugarDeDormir": "En su camita en el interior",
+          "otrosAnimales": true,
+          "descripcionOtrosAnimales": "Son dos chihuahuas",
+          "caracterMascota": "activo e independiente"
+        },
+        {
+          "nroId": 2,
+          "mascota": {
+            "id": 3,
+            "nombre": "Tom",
+            "especie": "Gato",
+            "color": "Gris",
+            "tipo": "Propia",
+            "ubicacion": "El Hatillo, Caracas",
+            "edad": 4,
+            "periodo": "Años",
+            "raza": "Siamés",
+            "descripcion": "Tom es un gato muy independiente y misterioso.",
+            "rutaImagen": "../Imagenes/tom.jpg"
+          },
+          "estatus": "enviada",
+          "vivienda": "Casa",
+          "tipoVivienda": "Propia",
+          "conJardin": true,
+          "autorizadoEnAlquiler": true,
+          "horarioLaboral": [
+            "08:00",
+            "17:00",
+            [
+              "Lunes",
+              "Martes",
+              "Miércoles"
+            ]
+          ],
+          "situacionVacaciones": "Se quedaría con mi mamá",
+          "motivoAdopcion": "Por compañía",
+          "familiarResponsable": "Yo",
+          "desicionCompartida": true,
+          "lugarDeDormir": "En su camita en el interior",
+          "otrosAnimales": true,
+          "descripcionOtrosAnimales": "Son dos chihuahuas",
+          "caracterMascota": "activo e independiente"
+        },
+        {
+          "nroId": 4,
+          "mascota": {
+            "id": 1,
+            "nombre": "Firulais",
+            "especie": "Perro",
+            "color": "Negro",
+            "tipo": "Propia",
+            "ubicacion": "Libertador, Caracas",
+            "edad": 3,
+            "periodo": "Años",
+            "raza": "Labrador",
+            "descripcion": "Firulais es un perro muy juguetón y amigable.",
+            "rutaImagen": "../Imagenes/firulais.jpg"
+          },
+          "estatus": "enviada",
+          "vivienda": "Casa",
+          "tipoVivienda": "Propia",
+          "conJardin": true,
+          "autorizadoEnAlquiler": true,
+          "horarioLaboral": [
+            "08:00",
+            "17:00",
+            [
+              "Lunes",
+              "Martes",
+              "Miércoles"
+            ]
+          ],
+          "situacionVacaciones": "Se quedaría con mi mamá",
+          "motivoAdopcion": "Por compañía",
+          "familiarResponsable": "Yo",
+          "desicionCompartida": true,
+          "lugarDeDormir": "En su camita en el interior",
+          "otrosAnimales": true,
+          "descripcionOtrosAnimales": "Son dos chihuahuas",
+          "caracterMascota": "activo e independiente"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Luis",
+      "apellido": "Martinez",
+      "fechaDeNacimiento": "2001-08-14",
+      "correo": "nahomyrada07@gmail.com",
+      "contrasena": "12345681",
+      "listaMascota": [
+        {
+          "id": 1,
+          "nombre": "Tweety",
+          "especie": "Ave",
+          "color": "Verde",
+          "tipo": "Callejera",
+          "ubicacion": "Libertador, Caracas",
+          "edad": 2,
+          "periodo": "Años",
+          "raza": "Perico",
+          "descripcion": "Tweety es un perico muy sociable y divertido.",
+          "rutaImagen": "../Imagenes/tweety.jpg",
+          "ubicacionExacta": {
+            "lat": 10.480258278898603,
+            "lng": -66.8808388710022,
+            "name": "F4J9+5P2, Caracas 1080, Miranda, Venezuela"
+          }
+        },
+        {
+          "id": 2,
+          "nombre": "Max",
+          "especie": "Perro",
+          "color": "Negro",
+          "tipo": "Propia",
+          "ubicacion": "Sucre, Caracas",
+          "edad": 7,
+          "periodo": "Años",
+          "raza": "Pastor Alemán",
+          "descripcion": "Max es un perro muy protector y valiente.",
+          "rutaImagen": "../Imagenes/max.jpg"
+        }
+      ],
+      "listaAnuncios": [
+        {
+          "participante": {
+            "id": 4,
+            "nombre": "Luis",
+            "apellido": "Martinez",
+            "fechaDeNacimiento": "2001-08-14",
+            "correo": "nahomyrada07@gmail.com",
+            "contrasena": "12345681",
+            "listaMascota": [
+              {
+                "id": 1,
+                "nombre": "Tweety",
+                "especie": "Ave",
+                "color": "Verde",
+                "tipo": "Callejera",
+                "ubicacion": "Libertador, Caracas",
+                "edad": 2,
+                "periodo": "Años",
+                "raza": "Perico",
+                "descripcion": "Tweety es un perico muy sociable y divertido.",
+                "rutaImagen": "../Imagenes/tweety.jpg",
+                "ubicacionExacta": {
+                  "lat": 10.480258278898603,
+                  "lng": -66.8808388710022,
+                  "name": "F4J9+5P2, Caracas 1080, Miranda, Venezuela"
+                }
+              },
+              {
+                "id": 2,
+                "nombre": "Max",
+                "especie": "Perro",
+                "color": "Negro",
+                "tipo": "Propia",
+                "ubicacion": "Sucre, Caracas",
+                "edad": 7,
+                "periodo": "Años",
+                "raza": "Pastor Alemán",
+                "descripcion": "Max es un perro muy protector y valiente.",
+                "rutaImagen": "../Imagenes/max.jpg"
+              }
+            ],
+            "listaAnuncios": [],
+            "listaSolicitudes": []
+          },
+          "mascota": {
+            "id": 1,
+            "nombre": "Tweety",
+            "especie": "Ave",
+            "color": "Verde",
+            "tipo": "Callejera",
+            "ubicacion": "Libertador, Caracas",
+            "edad": 2,
+            "periodo": "Años",
+            "raza": "Perico",
+            "descripcion": "Tweety es un perico muy sociable y divertido.",
+            "rutaImagen": "../Imagenes/tweety.jpg",
+            "ubicacionExacta": {
+              "lat": 10.480258278898603,
+              "lng": -66.8808388710022,
+              "name": "F4J9+5P2, Caracas 1080, Miranda, Venezuela"
+            }
+          }
+        }
+      ],
+      "listaSolicitudes": []
+    },
+    {
+      "id": 5,
+      "nombre": "Sofia",
+      "apellido": "Gonzalez",
+      "fechaDeNacimiento": "2000-09-15",
+      "correo": "nmrada.22@est.ucab.edu.ve",
+      "contrasena": "12345682",
+      "listaMascota": [
+        {
+          "id": 1,
+          "nombre": "Luna",
+          "especie": "Gato",
+          "color": "Blanca",
+          "tipo": "Callejera",
+          "ubicacion": "Bello Monte, Caracas",
+          "edad": 3,
+          "periodo": "Años",
+          "raza": "Angora",
+          "descripcion": "Luna es una gata muy elegante y sofisticada.",
+          "rutaImagen": "../Imagenes/luna.jpg",
+          "ubicacionExacta": {
+            "lat": 10.447868536187556,
+            "lng": -66.92396879196167,
+            "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+          }
+        },
+        {
+          "id": 2,
+          "nombre": "Rocky",
+          "especie": "Perro",
+          "color": "Blanco",
+          "tipo": "Propia",
+          "ubicacion": "Chacao, Caracas",
+          "edad": 6,
+          "periodo": "Años",
+          "raza": "Dálmata",
+          "descripcion": "Rocky es un perro muy enérgico y amigable.",
+          "rutaImagen": "../Imagenes/rocky.jpg"
+        },
+        {
+          "id": 3,
+          "nombre": "Coco",
+          "especie": "Ave",
+          "color": "Verde",
+          "tipo": "Extraviada",
+          "ubicacion": "Coche, Caraca",
+          "edad": 4,
+          "periodo": "Años",
+          "raza": "Loro",
+          "descripcion": "Coco es un loro muy hablador y sociable.",
+          "rutaImagen": "../Imagenes/coco.jpg"
+        }
+      ],
+      "listaAnuncios": [
+        {
+          "participante": {
+            "id": 5,
+            "nombre": "Sofia",
+            "apellido": "Gonzalez",
+            "fechaDeNacimiento": "2000-09-15",
+            "correo": "nmrada.22@est.ucab.edu.ve",
+            "contrasena": "12345682",
+            "listaMascota": [
+              {
+                "id": 1,
+                "nombre": "Luna",
+                "especie": "Gato",
+                "color": "Blanca",
+                "tipo": "Callejera",
+                "ubicacion": "Bello Monte, Caracas",
+                "edad": 3,
+                "periodo": "Años",
+                "raza": "Angora",
+                "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                "rutaImagen": "../Imagenes/luna.jpg",
+                "ubicacionExacta": {
+                  "lat": 10.447868536187556,
+                  "lng": -66.92396879196167,
+                  "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                }
+              },
+              {
+                "id": 2,
+                "nombre": "Rocky",
+                "especie": "Perro",
+                "color": "Blanco",
+                "tipo": "Propia",
+                "ubicacion": "Chacao, Caracas",
+                "edad": 6,
+                "periodo": "Años",
+                "raza": "Dálmata",
+                "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                "rutaImagen": "../Imagenes/rocky.jpg"
+              },
+              {
+                "id": 3,
+                "nombre": "Coco",
+                "especie": "Ave",
+                "color": "Verde",
+                "tipo": "Extraviada",
+                "ubicacion": "Coche, Caraca",
+                "edad": 4,
+                "periodo": "Años",
+                "raza": "Loro",
+                "descripcion": "Coco es un loro muy hablador y sociable.",
+                "rutaImagen": "../Imagenes/coco.jpg"
+              }
+            ],
+            "listaAnuncios": [],
+            "listaSolicitudes": []
+          },
+          "mascota": {
+            "id": 1,
+            "nombre": "Luna",
+            "especie": "Gato",
+            "color": "Blanca",
+            "tipo": "Callejera",
+            "ubicacion": "Bello Monte, Caracas",
+            "edad": 3,
+            "periodo": "Años",
+            "raza": "Angora",
+            "descripcion": "Luna es una gata muy elegante y sofisticada.",
+            "rutaImagen": "../Imagenes/luna.jpg",
+            "ubicacionExacta": {
+              "lat": 10.447868536187556,
+              "lng": -66.92396879196167,
+              "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+            }
+          }
+        }
+      ],
+      "listaSolicitudes": []
+    }
+  ],
+  "ParticipanteEnLinea": {
+    "id": 2,
+    "nombre": "Carlos",
+    "apellido": "Gomez",
+    "fechaDeNacimiento": "2002-05-12",
+    "correo": "abrahamcarranza2602@gmail.com",
+    "contrasena": "12345679",
+    "listaMascota": [
+      {
+        "id": 1,
+        "nombre": "Piolín",
+        "especie": "Ave",
+        "color": "Amarillo",
+        "tipo": "Propia",
+        "ubicacion": "Baruta, Caracas",
+        "edad": 1,
+        "periodo": "Años",
+        "raza": "Canario",
+        "descripcion": "Piolín es un canario con un canto muy hermoso.",
+        "rutaImagen": "../Imagenes/piolin.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Bella",
+        "especie": "Perro",
+        "color": "Marron",
+        "tipo": "Callejera",
+        "ubicacion": "Bellas Artes, Caracas",
+        "edad": "5",
+        "periodo": "Años",
+        "raza": "Golden Retriever",
+        "descripcion": "Bella es una perra muy inteligente y leal.",
+        "rutaImagen": "../Imagenes/unnamed.jpg",
+        "ubicacionExacta": {
+          "lat": 10.498930956839727,
+          "lng": -66.89781188964844,
+          "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+        }
+      },
+      {
+        "id": 3,
+        "nombre": "Tom",
+        "especie": "Gato",
+        "color": "Gris",
+        "tipo": "Propia",
+        "ubicacion": "El Hatillo, Caracas",
+        "edad": 4,
+        "periodo": "Años",
+        "raza": "Siamés",
+        "descripcion": "Tom es un gato muy independiente y misterioso.",
+        "rutaImagen": "../Imagenes/tom.jpg"
+      }
+    ],
+    "listaAnuncios": [
+      {
+        "participante": {
+          "id": 2,
+          "nombre": "Carlos",
+          "apellido": "Gomez",
+          "fechaDeNacimiento": "2002-05-12",
+          "correo": "abrahamcarranza2602@gmail.com",
+          "contrasena": "12345679",
+          "listaMascota": [
+            {
+              "id": 1,
+              "nombre": "Piolín",
+              "especie": "Ave",
+              "color": "Amarillo",
+              "tipo": "Propia",
+              "ubicacion": "Baruta, Caracas",
+              "edad": 1,
+              "periodo": "Años",
+              "raza": "Canario",
+              "descripcion": "Piolín es un canario con un canto muy hermoso.",
+              "rutaImagen": "../Imagenes/piolin.jpg"
+            },
+            {
+              "id": 2,
+              "nombre": "Bella",
+              "especie": "Perro",
+              "color": "Marrón",
+              "tipo": "Callejera",
+              "ubicacion": "Bellas Artes, Caracas",
+              "edad": 5,
+              "periodo": "Años",
+              "raza": "Golden Retriever",
+              "descripcion": "Bella es una perra muy inteligente y leal.",
+              "rutaImagen": "../Imagenes/bella.jpg",
+              "ubicacionExacta": {
+                "lat": 10.498930956839727,
+                "lng": -66.89781188964844,
+                "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+              }
+            },
+            {
+              "id": 3,
+              "nombre": "Tom",
+              "especie": "Gato",
+              "color": "Gris",
+              "tipo": "Propia",
+              "ubicacion": "El Hatillo, Caracas",
+              "edad": 4,
+              "periodo": "Años",
+              "raza": "Siamés",
+              "descripcion": "Tom es un gato muy independiente y misterioso.",
+              "rutaImagen": "../Imagenes/tom.jpg"
+            }
+          ],
+          "listaAnuncios": [],
+          "listaSolicitudes": []
+        },
+        "mascota": {
+          "id": 2,
+          "nombre": "Bella",
+          "especie": "Perro",
+          "color": "Marrón",
+          "tipo": "Callejera",
+          "ubicacion": "Bellas Artes, Caracas",
+          "edad": 5,
+          "periodo": "Años",
+          "raza": "Golden Retriever",
+          "descripcion": "Bella es una perra muy inteligente y leal.",
+          "rutaImagen": "../Imagenes/bella.jpg",
+          "ubicacionExacta": {
+            "lat": 10.498930956839727,
+            "lng": -66.89781188964844,
+            "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+          }
+        }
+      },
+      {
+        "participante": {
+          "id": 5,
+          "nombre": "Sofia",
+          "apellido": "Gonzalez",
+          "fechaDeNacimiento": "2000-09-15",
+          "correo": "nmrada.22@est.ucab.edu.ve",
+          "contrasena": "12345682",
+          "listaMascota": [
+            {
+              "id": 1,
+              "nombre": "Luna",
+              "especie": "Gato",
+              "color": "Blanca",
+              "tipo": "Callejera",
+              "ubicacion": "Bello Monte, Caracas",
+              "edad": 3,
+              "periodo": "Años",
+              "raza": "Angora",
+              "descripcion": "Luna es una gata muy elegante y sofisticada.",
+              "rutaImagen": "../Imagenes/luna.jpg",
+              "ubicacionExacta": {
+                "lat": 10.447868536187556,
+                "lng": -66.92396879196167,
+                "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+              }
+            },
+            {
+              "id": 2,
+              "nombre": "Rocky",
+              "especie": "Perro",
+              "color": "Blanco",
+              "tipo": "Propia",
+              "ubicacion": "Chacao, Caracas",
+              "edad": 6,
+              "periodo": "Años",
+              "raza": "Dálmata",
+              "descripcion": "Rocky es un perro muy enérgico y amigable.",
+              "rutaImagen": "../Imagenes/rocky.jpg"
+            },
+            {
+              "id": 3,
+              "nombre": "Coco",
+              "especie": "Ave",
+              "color": "Verde",
+              "tipo": "Extraviada",
+              "ubicacion": "Coche, Caraca",
+              "edad": 4,
+              "periodo": "Años",
+              "raza": "Loro",
+              "descripcion": "Coco es un loro muy hablador y sociable.",
+              "rutaImagen": "../Imagenes/coco.jpg"
+            }
+          ],
+          "listaAnuncios": [
+            {
+              "participante": {
+                "id": 5,
+                "nombre": "Sofia",
+                "apellido": "Gonzalez",
+                "fechaDeNacimiento": "2000-09-15",
+                "correo": "nmrada.22@est.ucab.edu.ve",
+                "contrasena": "12345682",
+                "listaMascota": [
+                  {
+                    "id": 1,
+                    "nombre": "Luna",
+                    "especie": "Gato",
+                    "color": "Blanca",
+                    "tipo": "Callejera",
+                    "ubicacion": "Bello Monte, Caracas",
+                    "edad": 3,
+                    "periodo": "Años",
+                    "raza": "Angora",
+                    "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                    "rutaImagen": "../Imagenes/luna.jpg",
+                    "ubicacionExacta": {
+                      "lat": 10.447868536187556,
+                      "lng": -66.92396879196167,
+                      "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "nombre": "Rocky",
+                    "especie": "Perro",
+                    "color": "Blanco",
+                    "tipo": "Propia",
+                    "ubicacion": "Chacao, Caracas",
+                    "edad": 6,
+                    "periodo": "Años",
+                    "raza": "Dálmata",
+                    "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                    "rutaImagen": "../Imagenes/rocky.jpg"
+                  },
+                  {
+                    "id": 3,
+                    "nombre": "Coco",
+                    "especie": "Ave",
+                    "color": "Verde",
+                    "tipo": "Extraviada",
+                    "ubicacion": "Coche, Caraca",
+                    "edad": 4,
+                    "periodo": "Años",
+                    "raza": "Loro",
+                    "descripcion": "Coco es un loro muy hablador y sociable.",
+                    "rutaImagen": "../Imagenes/coco.jpg"
+                  }
+                ],
+                "listaAnuncios": [],
+                "listaSolicitudes": []
+              },
+              "mascota": {
+                "id": 1,
+                "nombre": "Luna",
+                "especie": "Gato",
+                "color": "Blanca",
+                "tipo": "Callejera",
+                "ubicacion": "Bello Monte, Caracas",
+                "edad": 3,
+                "periodo": "Años",
+                "raza": "Angora",
+                "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                "rutaImagen": "../Imagenes/luna.jpg",
+                "ubicacionExacta": {
+                  "lat": 10.447868536187556,
+                  "lng": -66.92396879196167,
+                  "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                }
+              }
+            }
+          ],
+          "listaSolicitudes": []
+        },
+        "mascota": {
+          "id": 3,
+          "nombre": "Coco",
+          "especie": "Ave",
+          "color": "Verde",
+          "tipo": "Extraviada",
+          "ubicacion": "Coche, Caraca",
+          "edad": 4,
+          "periodo": "Años",
+          "raza": "Loro",
+          "descripcion": "Coco es un loro muy hablador y sociable.",
+          "rutaImagen": "../Imagenes/coco.jpg"
+        }
+      },
+      {
+        "participante": {
+          "id": 2,
+          "nombre": "Carlos",
+          "apellido": "Gomez",
+          "fechaDeNacimiento": "2002-05-12",
+          "correo": "abrahamcarranza2602@gmail.com",
+          "contrasena": "12345679",
+          "listaMascota": [
+            {
+              "id": 1,
+              "nombre": "Piolín",
+              "especie": "Ave",
+              "color": "Amarillo",
+              "tipo": "Propia",
+              "ubicacion": "Baruta, Caracas",
+              "edad": 1,
+              "periodo": "Años",
+              "raza": "Canario",
+              "descripcion": "Piolín es un canario con un canto muy hermoso.",
+              "rutaImagen": "../Imagenes/piolin.jpg"
+            },
+            {
+              "id": 2,
+              "nombre": "Bella",
+              "especie": "Perro",
+              "color": "Marron",
+              "tipo": "Callejera",
+              "ubicacion": "Bellas Artes, Caracas",
+              "edad": "5",
+              "periodo": "Años",
+              "raza": "Golden Retriever",
+              "descripcion": "Bella es una perra muy inteligente y leal.",
+              "rutaImagen": "../Imagenes/unnamed.jpg",
+              "ubicacionExacta": {
+                "lat": 10.498930956839727,
+                "lng": -66.89781188964844,
+                "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+              }
+            },
+            {
+              "id": 3,
+              "nombre": "Tom",
+              "especie": "Gato",
+              "color": "Gris",
+              "tipo": "Propia",
+              "ubicacion": "El Hatillo, Caracas",
+              "edad": 4,
+              "periodo": "Años",
+              "raza": "Siamés",
+              "descripcion": "Tom es un gato muy independiente y misterioso.",
+              "rutaImagen": "../Imagenes/tom.jpg"
+            }
+          ],
+          "listaAnuncios": [
+            {
+              "participante": {
+                "id": 2,
+                "nombre": "Carlos",
+                "apellido": "Gomez",
+                "fechaDeNacimiento": "2002-05-12",
+                "correo": "abrahamcarranza2602@gmail.com",
+                "contrasena": "12345679",
+                "listaMascota": [
+                  {
+                    "id": 1,
+                    "nombre": "Piolín",
+                    "especie": "Ave",
+                    "color": "Amarillo",
+                    "tipo": "Propia",
+                    "ubicacion": "Baruta, Caracas",
+                    "edad": 1,
+                    "periodo": "Años",
+                    "raza": "Canario",
+                    "descripcion": "Piolín es un canario con un canto muy hermoso.",
+                    "rutaImagen": "../Imagenes/piolin.jpg"
+                  },
+                  {
+                    "id": 2,
+                    "nombre": "Bella",
+                    "especie": "Perro",
+                    "color": "Marrón",
+                    "tipo": "Callejera",
+                    "ubicacion": "Bellas Artes, Caracas",
+                    "edad": 5,
+                    "periodo": "Años",
+                    "raza": "Golden Retriever",
+                    "descripcion": "Bella es una perra muy inteligente y leal.",
+                    "rutaImagen": "../Imagenes/bella.jpg",
+                    "ubicacionExacta": {
+                      "lat": 10.498930956839727,
+                      "lng": -66.89781188964844,
+                      "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+                    }
+                  },
+                  {
+                    "id": 3,
+                    "nombre": "Tom",
+                    "especie": "Gato",
+                    "color": "Gris",
+                    "tipo": "Propia",
+                    "ubicacion": "El Hatillo, Caracas",
+                    "edad": 4,
+                    "periodo": "Años",
+                    "raza": "Siamés",
+                    "descripcion": "Tom es un gato muy independiente y misterioso.",
+                    "rutaImagen": "../Imagenes/tom.jpg"
+                  }
+                ],
+                "listaAnuncios": [],
+                "listaSolicitudes": []
+              },
+              "mascota": {
+                "id": 2,
+                "nombre": "Bella",
+                "especie": "Perro",
+                "color": "Marrón",
+                "tipo": "Callejera",
+                "ubicacion": "Bellas Artes, Caracas",
+                "edad": 5,
+                "periodo": "Años",
+                "raza": "Golden Retriever",
+                "descripcion": "Bella es una perra muy inteligente y leal.",
+                "rutaImagen": "../Imagenes/bella.jpg",
+                "ubicacionExacta": {
+                  "lat": 10.498930956839727,
+                  "lng": -66.89781188964844,
+                  "name": "F4X2+RRW, Caracas 1014, Distrito Capital, Venezuela"
+                }
+              }
+            },
+            {
+              "participante": {
+                "id": 5,
+                "nombre": "Sofia",
+                "apellido": "Gonzalez",
+                "fechaDeNacimiento": "2000-09-15",
+                "correo": "nmrada.22@est.ucab.edu.ve",
+                "contrasena": "12345682",
+                "listaMascota": [
+                  {
+                    "id": 1,
+                    "nombre": "Luna",
+                    "especie": "Gato",
+                    "color": "Blanca",
+                    "tipo": "Callejera",
+                    "ubicacion": "Bello Monte, Caracas",
+                    "edad": 3,
+                    "periodo": "Años",
+                    "raza": "Angora",
+                    "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                    "rutaImagen": "../Imagenes/luna.jpg",
+                    "ubicacionExacta": {
+                      "lat": 10.447868536187556,
+                      "lng": -66.92396879196167,
+                      "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "nombre": "Rocky",
+                    "especie": "Perro",
+                    "color": "Blanco",
+                    "tipo": "Propia",
+                    "ubicacion": "Chacao, Caracas",
+                    "edad": 6,
+                    "periodo": "Años",
+                    "raza": "Dálmata",
+                    "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                    "rutaImagen": "../Imagenes/rocky.jpg"
+                  },
+                  {
+                    "id": 3,
+                    "nombre": "Coco",
+                    "especie": "Ave",
+                    "color": "Verde",
+                    "tipo": "Extraviada",
+                    "ubicacion": "Coche, Caraca",
+                    "edad": 4,
+                    "periodo": "Años",
+                    "raza": "Loro",
+                    "descripcion": "Coco es un loro muy hablador y sociable.",
+                    "rutaImagen": "../Imagenes/coco.jpg"
+                  }
+                ],
+                "listaAnuncios": [
+                  {
+                    "participante": {
+                      "id": 5,
+                      "nombre": "Sofia",
+                      "apellido": "Gonzalez",
+                      "fechaDeNacimiento": "2000-09-15",
+                      "correo": "nmrada.22@est.ucab.edu.ve",
+                      "contrasena": "12345682",
+                      "listaMascota": [
+                        {
+                          "id": 1,
+                          "nombre": "Luna",
+                          "especie": "Gato",
+                          "color": "Blanca",
+                          "tipo": "Callejera",
+                          "ubicacion": "Bello Monte, Caracas",
+                          "edad": 3,
+                          "periodo": "Años",
+                          "raza": "Angora",
+                          "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                          "rutaImagen": "../Imagenes/luna.jpg",
+                          "ubicacionExacta": {
+                            "lat": 10.447868536187556,
+                            "lng": -66.92396879196167,
+                            "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                          }
+                        },
+                        {
+                          "id": 2,
+                          "nombre": "Rocky",
+                          "especie": "Perro",
+                          "color": "Blanco",
+                          "tipo": "Propia",
+                          "ubicacion": "Chacao, Caracas",
+                          "edad": 6,
+                          "periodo": "Años",
+                          "raza": "Dálmata",
+                          "descripcion": "Rocky es un perro muy enérgico y amigable.",
+                          "rutaImagen": "../Imagenes/rocky.jpg"
+                        },
+                        {
+                          "id": 3,
+                          "nombre": "Coco",
+                          "especie": "Ave",
+                          "color": "Verde",
+                          "tipo": "Extraviada",
+                          "ubicacion": "Coche, Caraca",
+                          "edad": 4,
+                          "periodo": "Años",
+                          "raza": "Loro",
+                          "descripcion": "Coco es un loro muy hablador y sociable.",
+                          "rutaImagen": "../Imagenes/coco.jpg"
+                        }
+                      ],
+                      "listaAnuncios": [],
+                      "listaSolicitudes": []
+                    },
+                    "mascota": {
+                      "id": 1,
+                      "nombre": "Luna",
+                      "especie": "Gato",
+                      "color": "Blanca",
+                      "tipo": "Callejera",
+                      "ubicacion": "Bello Monte, Caracas",
+                      "edad": 3,
+                      "periodo": "Años",
+                      "raza": "Angora",
+                      "descripcion": "Luna es una gata muy elegante y sofisticada.",
+                      "rutaImagen": "../Imagenes/luna.jpg",
+                      "ubicacionExacta": {
+                        "lat": 10.447868536187556,
+                        "lng": -66.92396879196167,
+                        "name": "C.C. Coche, Piso 3, a la salida de la Est. del Metro, Edificio Anzoategui, Av. Intercomunal de El Valle, Caracas 1090, Distrito Capital, Venezuela"
+                      }
+                    }
+                  }
+                ],
+                "listaSolicitudes": []
+              },
+              "mascota": {
+                "id": 3,
+                "nombre": "Coco",
+                "especie": "Ave",
+                "color": "Verde",
+                "tipo": "Extraviada",
+                "ubicacion": "Coche, Caraca",
+                "edad": 4,
+                "periodo": "Años",
+                "raza": "Loro",
+                "descripcion": "Coco es un loro muy hablador y sociable.",
+                "rutaImagen": "../Imagenes/coco.jpg"
+              }
+            }
+          ],
+          "listaSolicitudes": []
+        },
+        "mascota": {
+          "id": 4,
+          "nombre": "A",
+          "especie": "Perro",
+          "color": "Amarrillo",
+          "tipo": "Callejera",
+          "ubicacion": "F4JC+RCG, Av. Caroní, Caracas 1080, Miranda, Venezuela",
+          "edad": "2",
+          "periodo": "Años",
+          "raza": "Labrador",
+          "descripcion": "A",
+          "rutaImagen": "../Imagenes/unnamed (4).jpg",
+          "ubicacionExacta": {
+            "lat": 10.482069062030178,
+            "lng": -66.87887942061425,
+            "name": "Selected Location"
+          }
+        },
+        "tipo": "Callejera"
+      }
+    ],
+    "listaSolicitudes": []
+  }
+}

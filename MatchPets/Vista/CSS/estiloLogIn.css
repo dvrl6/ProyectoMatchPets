@@ -1,0 +1,213 @@
+html{
+    font-family: 'Montserrat';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:#74C69D;
+    color: white;
+    padding: 15px;
+    cursor: default;
+    margin-bottom: 30px;
+}
+
+header h1{
+    color: rgb(25, 98, 107);
+    font-size: 80px;
+    text-align: center;
+}
+body{
+    background-color: white;
+    margin: 0 ;
+    align-items: center;
+}
+
+.links{
+    
+    position: relative;
+    margin: 30px auto;
+    height: 400px;
+    background-color: white;
+    padding: 20PX;
+    border-radius: 12PX;
+    box-shadow: 0/*Cuanto de desplaza a la derecha*/ 0.2rem /*Desplaza abajo*/ 0.4rem /*Difuminacion*/ rgb(19, 88, 97);
+    display: flex;
+    flex-wrap: wrap;
+    max-inline-size: 450px;
+    min-inline-size: 450;
+
+}
+
+
+.tabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem ;
+}
+
+.tabs li{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:  #E87229;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.tabs li:after{
+    transition: width 0.8s ease;
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -3% ;
+    width: 0%;
+    height: 5px;
+    background:   #E87229;
+    border-radius: 30px;
+    
+}
+
+.tabs li.active:after{
+    width: 104%;
+}
+.content{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    margin: 0 auto;
+}
+
+.content.active{
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+}
+
+
+.datosUsuario{
+    margin: 0 auto;
+    width: 450PX;
+    height: 500px;
+    position: relative;
+}
+
+#CorreoI, #ContraseniaI,#CorreoR, #ContraseniaR,#NombreRegistro, #ApellidoRegistro{
+    padding: 10PX;
+    font-size: 18px;
+    width: 400PX;
+    border-radius: 12PX;
+    outline: none;
+    border: solid 2PX  #E87229;
+    margin: 20px auto;
+}
+#ContraseniaI,#ContraseniaR{
+    width: 300PX;
+}
+
+#fechaNacimiento{
+    padding: 10PX;
+    font-size: 18px;
+    width: 400PX;
+    border-radius: 12PX;
+    outline: none;
+    border: solid 2PX  #E87229;
+    margin: 20px auto;
+    color: #666666;
+    margin-top: 0px;
+}
+
+
+.IniciarSesion,.Registrarse{
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+    border: solid 2PX  #a1a1a1;
+    border-radius: 12PX;
+    width: 200px;
+    background-color:  #a1a1a1;
+    color: white;
+    padding: 10px;
+}
+
+.IniciarSesion:hover{
+    margin: 0 auto;
+    transition: .2s box-shadow ease;
+    cursor: pointer;
+    background-color: #E87229;
+    border: solid 2PX  #E87229;
+    color:white ;
+    box-shadow: 0/*Cuanto de desplaza a la derecha*/ 0.2rem /*Desplaza abajo*/ 0.4rem /*Difuminacion*/ rgb(19, 88, 97);
+}
+.Registrarse:hover{
+    transition: .2s box-shadow ease;
+    cursor: pointer;
+    background-color: #E87229;
+    border: solid 2PX  #E87229;
+    color:white;
+    box-shadow: 0/*Cuanto de desplaza a la derecha*/ 0.2rem /*Desplaza abajo*/ 0.4rem /*Difuminacion*/ rgb(19, 88, 97);
+}
+
+.verContrasenia{
+    float: right;
+    margin: 20px;
+}
+.textFieldHolder{
+    position: relative;
+}
+
+.textFieldHolder label {
+    position: absolute;
+    top: 15%;
+    left: 30px;
+    transform:translateY(-50%);
+    color:transparent;
+    font-size: 17px;
+    font-weight: 600;
+    pointer-events: none;
+    transition:.3s ;
+}
+input:focus ~ label{
+    font-weight: 600;
+    padding: 0 2px;
+    color: #E87229;
+    background: white;
+}
+
+
+/*Bandeja inferior*/
+footer{
+    background-color: #74C69D;
+    padding: 4rem;
+    margin-top: 300px;
+    color: white;
+}
+
+footer section{
+    float: right;
+    
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#irComienzo{
+    margin-right: 20px;
+}
+
+footer a:hover{
+    transition: color 0.5s ease;
+    color:   rgb(25, 98, 107);
+    font-weight: bolder;
+}

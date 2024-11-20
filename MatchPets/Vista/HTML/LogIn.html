@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html">
+<head>
+    <title id="LogIn">Log In</title>
+    <link rel="stylesheet" href="../CSS/estiloLogIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="titulo">
+        <section>
+            <h1>Match-Pet</h1>
+        </section>
+    </header>
+
+    
+    <section class="links" id="panel">
+        <section>
+            <ul class="tabs">
+                <li id="btnIniciar" class="btn active">Iniciar Sesion</li>
+                <li id="btnRegistrarse" class="btn" >Registrarse</li>
+            </ul>
+            <section >
+                <section class="content active" id="panelIn">
+                    <article class="datosUsuario">
+                        <article class="textFieldHolder">
+                            <input autocomplete="off" id="CorreoI" placeholder="Correo Electrónico"/>
+                            <label>Correo Electrónico</label>
+                        </article>
+                        <article class="textFieldHolder">
+                            <input type="password" id="ContraseniaI" placeholder="Contraseña"/>
+                            <label>Contraseña</label>
+                            <div class="verContrasenia">
+                                <h1 style="width: 80px;">Ver Contraseña</h1>
+                                <input id="verOcultarContraseniaInicioSesion" type="checkbox">
+                            </div>
+                        </article>
+                        <a id="botonIniciarSesion" class="IniciarSesion" >Iniciar Sesión</a>
+                        <h1 id="mensajeErrorInicioSesion" style="font-size: 15px; color: rgb(204, 28, 28); margin-top: 20px; cursor: default;"></h1>
+                    </article>
+                </section>
+    
+                <section class="content" id="panelRegistro">
+                    <article class="datosUsuario" id="datosRegistro">
+
+                        <article class="textFieldHolder">
+                            <input id="NombreRegistro" placeholder="Nombre"/>
+                            <label>Nombre</label>
+                        </article>
+
+                        <article class="textFieldHolder">
+                            <input id="ApellidoRegistro" placeholder="Apellido"/>
+                            <label>Apellido</label>
+                        </article>
+
+                        <h1 style="margin:0; font-size: 14px; color:#E87229;">Fecha Nacimiento (+18,-100)</h1>
+                        <input type="date" id="fechaNacimiento" />
+                            
+
+                        <article class="textFieldHolder">
+                            <input id="CorreoR" placeholder="Correo Electrónico"/>
+                            <label>Correo Electrónico</label>
+                        </article>
+
+                        <article class="textFieldHolder">
+                            <input type="password" id="ContraseniaR" placeholder="Contraseña"/>
+                            <label>Contraseña</label>
+                            <div class="verContrasenia">
+                                <h1 style="width: 80px;">Ver Contraseña</h1>
+                                <input id="verOcultarContraseniaRegistro" type="checkbox">
+                            </div>
+                        </article>
+                        
+                        <a id="botonRegistrarse" class="Registrarse">Registrarse</a>
+                        <h1 id="mensajeErrorRegistro" style="font-size: 15px; display: block; color: rgb(204, 28, 28); margin-top: 20px; cursor: default;"></h1>
+                    </article>
+                </section>
+            </section>  
+        </section>
+    </section>
+
+    <div id ='info'>
+
+    </div>
+
+    <footer>
+        <section>
+            <a id="irComienzo" href="#titulo">Ir al Comienzo</a>
+            <a href="mailto:abrahamcarranza2602@gmail.com">Contactame Aqui</a>
+        </section>
+        <p>Copy Right 2024</p>
+    </footer>
+    <script src="../../Modelo/Configuracion/manejoJSON.js" type="module"></script>
+    <script src="../Eventos/EventosLogIn.js" type = "module"></script>
+    <script src="../../Controlador/ControladorLogIn.js" type="module"></script>
+    
+
+</body>
+</html>

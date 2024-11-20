@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es-VE">
+<head>
+    <title>MatchPets</title>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/estiloPrincipal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/14b4150f91.js" crossorigin="anonymous"></script> <!--Es para usar unos iconos, Nahomy-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Para personalizar alertas-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ 
+</head>
+<body>
+   
+    <!--Inicio del programa-->
+    <header id="titulo">
+        <img src="../Imagenes/LogoSinFondo.png" alt="MatchPets" class="logo">
+        <a class="botonTexto inicio" href="LogIn.html" id="cerrarSesion">Cerrar Sesión</a>
+        <!-- <a class="botonTexto" href="LogIn.html">Registrarse</a> -->
+        
+    </header>
+    <!--Agregado por Nahomy -->
+    <section class="menuHorizontal">
+
+        <article class="tabs">
+            <button class="btn active" id="inicio">
+                <img src="../Imagenes/home.png" width="30px"/>
+            </button > 
+            <button class="btn" id="aniadir">
+                <img src="../Imagenes/Aniadir.png" width="30px"/>
+            </button >  
+            <button class="btn botonPerfil" id="perfil" >
+                <img src="../Imagenes/perfil.png" width="30px"/>
+            </button>  
+        </article>
+    </section>
+
+    <section class="content active" class="containerPrincipal catalogoMascotas">
+        <section> <!--esto es para controlar las vistas de las secciones de catalogo y consultar-->
+            <section id="catalogoMostrado"> 
+                <!-- Barra de busqueda -->
+                    
+                    <!-- barra lateral de filtros de busqueda -->
+                    <section class="regionCentral">
+                        <section id="sidebar">
+                            <h1 class="titulo">Filtros</h1>
+                            <section id="seccionFiltro">
+                                <select class="barraFiltro" id = "especieFiltro">
+                                    <option disabled selected id>Especie</option>
+                                    <option value="Perro">Perro</option>
+                                    <option value="Gato">Gato</option>
+                                    <option value="Ave">Ave</option>
+                                    <option value="Roedor">Roedor</option>
+                                </select>
+                                <select class="barraFiltro" id="edadFiltro">
+                                    <option disabled selected>Edad</option>
+                                </select>
+                                <button id="btnReiniciarFiltros" class="barraFiltro">Reiniciar filtros</button>
+                                
+                            </section>
+                        </section>
+                        
+                        <section class="catalogo">
+                            <h1 class="titulo" id="top">Mascotas</h1>
+                            <div class="container-tipoMascota">
+                                <span class="botonNaranja btn active" id="btnAdopcion">Propias</span> 
+                                <span class="botonNaranja btn" id="btnPerdidas">Extraviadas</span>
+                                <span class="botonNaranja btn " id="btnCallejeras">Callejeras</span> 
+                            </div>
+                            <section id="mascotasEnAdopcion">
+                                <div class="container-mascotas">
+                                    
+                                </div>
+                            </section>
+                            <section id="mascotasPerdidas">
+                                <div class="container-mascotas" >
+    
+                                </div>
+                            </section>
+                            <section id="mascotasCallejeras">
+                                <div class="container-mascotas"></div>
+                            </section>
+                    </section>
+                    </section>
+            </section>
+                <section id="consultarEscondido">
+
+                            <!--CONSULTAR MASCOTA-->   
+                    <span class="botonRegresar" id="botonRegresar"></span>
+                    <p><span class="icono-flecha"></span></p>
+                    <div class="conteiner-consulta">
+                        <div class="images">
+                            <img id="imagenConsultada">
+                        </div>
+                        
+                    </div>
+                    <!-- <script src="https://example.com/fontawesome/v6.5.2/js/all.js" data-auto-a11y="true"></script> -->
+
+                    <div class="conteiner-padre">
+                        <div class="conteiner-informacion">
+                            <h1 class="nombre titulo">Nombre Título</h1>
+                            <div class="columnas">
+                              <div class="columna-1">
+                                <h3 class="tipoMascota">Tipo</h3>
+                                <p class="tipo"></p>
+                                <h3 class="especie">Raza</h3>
+                                <p class="raza"></p>
+                              </div>
+                              <div class="columna-2">
+                                <h3>Ubicacion</h3>
+                                <p class="ubicacion"></p>
+                                <h3>Edad</h3>
+                                <p class="edad"></p>
+                                <h3>Descripción</h3>
+                                <p class="descripcion"></p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        <div class="conteiner-solicitar">
+                            <h2>¿Considerando adoptar?</h2>
+                            <div class="container-options">
+                                <div class="btn-adopcion" id="botonMostrarSolicitud">
+                                    <p>Comenzar Solicitud</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "container-mapa-consulta">
+                            <div id="map-container"></div>
+                        </div>
+        
+                    </div>
+                </section>
+                 <!--Solicitud de Adopcion-->
+                 <section id="solicitudEscondida">
+                    <div class="container-solicitud">
+                        <div class="heading">
+                        <h1 id="title">Formulario de Adopción</h1>
+                        <h3 id="subheading">El objetivo de este cuestionario es encontrar
+                        la combinación perro-amo óptima, de manera que ambos sean felices
+                        tras la adopción.</h3>
+                        </div>
+
+                        <form id="formulario">
+                        <div class="contenido vivienda">
+                            <h4>Vivienda</h4>
+                        <div id="TipoVivienda">
+                            <label class="required-label">¿En que tipo de vivienda reside?</label> <br><br>
+                            <div id="opcionesTipoVivienda">
+                                <select id="selectTipoVivienda" required>
+                                    <!-- <option name="Seleccione una opcion">Seleccione una opcion</option> -->
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>  
+                        </div>
+
+                        <div id="infoVivienda"><br>
+                            <label id="radio1" class="required-label">La vivienda es</label><br><br>
+                            <input type="radio" name="grupoOpciones1" value="Propia" id="propia" class="casilla" required>&nbsp&nbsp&nbspPropia<br><br>
+                            <input type="radio" name="grupoOpciones1" value="Alquilada" id="alquiler" class="casilla">&nbsp&nbsp&nbspAlquiler<br><br>
+                        </div>
+
+                            <div>
+                            <label id="radio3" class="required-label">En caso de que viva de alquiler, ¿tiene conocimiento el dueño/a de la vivienda de que va usted a adoptar a un animal y está de acuerdo con ello?</label><br><br>
+                            <input type="radio" class="grupoOpciones3" name="grupoOpciones3" value="Si" id="landlord" class="casilla"required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" class="grupoOpciones3" name="grupoOpciones3" value="No" id="landlordNo" class="casilla">&nbsp&nbsp&nbspNo<br><br>
+                            <input type="radio" class="grupoOpciones3" name="grupoOpciones3" value="No Aplica" id="noAplicaAlquiler" class="casilla">&nbsp&nbsp&nbspNo Aplica<br><br>
+                            </div> 
+
+                            
+                        <div id="jardin">
+                            <label id="radio2" class="required-label">¿Cuenta con Jardin?</label><br><br>
+                            <input type="radio" name="grupoOpciones2" value="Si" id="jardin" class="casilla" required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" name="grupoOpciones2" value="No" id="noJardin" class="casilla" >&nbsp&nbsp&nbspNo<br><br>
+                            </div>
+                        </div> 
+
+                        <div class="contenido tiempo"> 
+                            <h4>Ocupacion/Tiempo Libre</h4>
+                            <div class="contenido-tiempo">
+                            <label class="required-label">Si trabaja actualmente, ¿qué horario laboral tiene?</label><br><br>
+                            <input autocomplete="off" type="text" name="horario" placeholder="..." class="box casilla" id="horarioLaboral" required><br><br>
+                            <label class="required-label">Si se va de vacaciones, ¿qué pasaría con la mascota?</label><br><br>
+                            <textarea autocomplete="off" name="vacaciones" placeholder="..." class="box casilla" id="vacacionesMascota" required></textarea><br><br>
+                            </div>
+                        </div> 
+
+                    <div class="contenido adopcion">
+                        <h4>Sobre la adopción</h4>
+                        <div class="contenido-adopcion">
+                            <label class="required-label">¿Por qué se decide a adoptar a un animal?</label><br><br>
+                            <textarea autocomplete="off" type="text" name="razon" placeholder="Por compañía, para cría, para caza, como guardián, como terapia, regalo,..." class="box casilla" id="razonAdopcion" required></textarea><br><br>
+                            <label class="required-label">De su familia, ¿quién sería el responsable de la mascota?</label><br><br>
+                            <textarea autocomplete="off" type="text" name="responsable" placeholder="Usted, su madre, su padre, ..." class="box casilla" id="responsableMascota" required></textarea><br><br>
+                            <label class="required-label">¿Comparten la decisión de adoptar una mascota el resto de miembros del hogar?</label><br><br>
+                            <input type="radio" name="grupoOpciones4" value="Si" id="CompartenDecision" class="casilla" required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" name="grupoOpciones4" value="No" id="NoCompartenDecision" class="casilla">&nbsp&nbsp&nbspNo<br><br>
+                            <label class="required-label">¿Dónde dormirá la mascota?</label><br><br>
+                            <textarea autocomplete="off" type="text" name="sleeping" placeholder="En su camita en el interior, en la cama del amo, en el corredor, en una caseta en el exterior, en una jaula..." class="box casilla" id="lugarDormir" required></textarea><br><br>
+                            <label class="required-label">¿Tiene actualmente otros animales en casa?</label><br><br>
+                            <input type="radio" name="grupoOpciones5" value="Si" id="animales" class="casilla" required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" name="grupoOpciones5" value="No" id="noAnimales">&nbsp&nbsp&nbspNo<br><br>
+                            <label>En caso de que así sea, cuéntenos algo de ellos</label><br><br>
+                            <textarea autocomplete="off" type="text" name="informacionMascotasActuales" placeholder="Cuántos son y de qué especie, qué raza son, de qué edad, de qué sexo, qué carácter tienen" class="box casilla"  id="infoOtrasMascotas" required></textarea><br><br>
+                            <label class="required-label">¿Qué carácter desea que tenga la mascota?</label><br><br>
+                            <input autocomplete="off" type="text" name="caracter" placeholder="Tranquilo, activo, cariñoso, independiente..." class="box casilla" id="caracterMascota" required><br><br>          
+                        </div>
+                    </div>
+                        </form>
+
+                        <div class="finalSolicitud">
+                        <div class="condiciones">
+                            <h2>Importante</h2>
+                            <input type="checkbox" name="condicion1" class="larger" id="cbCondicion" required>
+                            <label>Una vez recibido el cuestionario de pre-adopción, el Propretario de la mascota y/o Fundacion acargo es quien decide si se tramita la adopción o no. 
+                                Si la decisión es afirmativa, el adoptante asumirá las condiciones de adopción que la Protectora tenga establecidas.</label>
+                        </div>
+                        <div class="botonesSolicitud">
+                            <!-- <button><h3>Enviar</h3></button> -->
+                            <button type="submit" form="formulario" id="botonEnviarSolicitud"><h3>Enviar</h3></button>
+                            <button id="btnRegresarSolicitud";"><h3>Volver</h3></button>
+                        </div>
+                        </div>
+                    </div>
+
+                </section>
+        </section>
+    </section>
+  
+    
+    
+
+    <section>
+
+    <!--Crear una Publicacion-->
+        <!--Crear una Publicacion-->
+        <section class="nuevoContenido content">
+            <section class="container2" >
+                <article class="nuevaMascota">
+                    <section class="tituloMascotanueva">
+                        <h1>Nueva Mascota</h1>
+                        <hr class="tituloMascotanueva">
+                    </section>
+                    <section class="contenidoNuevaMascota">
+                        <section class="datosMascotaIzquierda" >
+                            <article id="fotoMascotaNueva">
+                                <label id="labelAgregarImagen" for="agregarImagenMascotaNueva">
+                                    <img id="imagenPreview" src="../Imagenes/defaultImagen.png" alt="Imagen de la mascota"  />
+                                </label>
+                                <input type="file" name ="agregarImagenMascotaNueva" id ="agregarImagenMascotaNueva" accept="image/*" data-default-image="../Imagenes/defaultImagen.png" >
+                            </article>
+    
+                            <article id="home2">
+                                <article class="textFieldHolder2">
+                                    <input id="indiqueNombreMascota" placeholder="Nombre"/>
+                                    <label>Nombre</label>
+                                </article>
+
+                                <article class="textFieldHolder2">
+                                    <div id="input-with-icon">
+                                      <input style="margin: 0;" id="ubicacionNuevaMascota" placeholder="Ubicacion" />
+                                      <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <label>Ubicacion</label>
+                                </article>
+                                
+                                <br>
+                                <select style="margin: 0;" id="colorMascotaNueva" class="inputlargos">
+                                    <option disabled selected>Selecciona el Color</option>
+                                    <option value="Marron">Marrón</option>
+                                    <option value="Amarrillo">Amarrillo</option>
+                                    <option value="Blanco">Blanco</option>
+                                    <option value="Negro">Negro</option>
+                                    <option value="Gris">Gris</option>
+                                    <option value="Verde">Verde</option>
+                                </select>
+    
+                            </article>
+                              
+                        </section>
+    
+                        <section class="datosMascotaDerecha" >
+                            <select id="especieMascotaNueva" type="list" class="inputlargos" name="especie">
+                                <option disabled selected>Selecciona la Especie</option>
+                                <option value="Perro">Perro</option>
+                                <option value="Gato">Gato</option>
+                                <option value="Ave">Ave</option>
+                                <option value="Roedor">Roedor</option>
+                            </select>
+                            
+                            
+                            <select id="razaMascotaNueva" class="inputlargos">
+                                <option disabled selected value="Raza">Selecciona la Raza</option>
+                            </select>
+                            <h1 style="margin: 0px; margin-left: 5px; font-style: italic; color: darkcyan;">*Primero elige la Especie</h1>
+                            <article style="margin-top: 12px;">
+                                <select id="periodoMascotaNueva" class="inputcortos">
+                                    <option disabled selected>Período</option>
+                                    <option value="Años">Años</option>
+                                    <option value="Meses">Meses</option>
+                                </select>
+                                <select id="edadMascotaNueva" class="inputcortos">
+                                    <option disabled selected>Edad</option>
+                                </select>
+                                <h1 style="margin: 0px; margin-left: 5px; font-style: italic; color: darkcyan;">*Primero elige la Especie, luego el Período y de Ultimo la Edad</h1>
+                            </article>
+                            
+                            
+                            <select s id="tipoMascotaNueva" class="inputlargos">
+                                <option disabled selected>Selecciona el Tipo</option>
+                                <option value="Extraviada">Extraviada</option>
+                                <option value="Propia">Propia</option>
+                                <option value="Callejera">Callejera</option>
+                            </select>
+                            
+                            
+                        </section>
+    
+                        <section  class="descripcionNuevaMascota">
+                                <textarea id="descripcionMascota" rows="5" cols="75" placeholder="Descripción" style="resize: none;"></textarea>
+                        </section>
+                        <h1 id="mensajeErrorNuevaMascota" style="display: none; font-size: 15px; color: rgb(204, 28, 28); margin-top: 20px; cursor: default;">Lo sentimos. Debe Rellenar todas las casillas.</h1>
+    
+                        
+                        <button id="botonnAñadirMascota" class="btnAñadirMascota">Añadir</button>
+                    </section>
+
+                    <div id="popup" class="popup">
+                        <div class="popup-content">
+                          <span id="close-button">&times;</span>
+                          <h2>Mapa de Ubicación</h2>
+                          <div class="containerMapa">
+                            <input id="search-input" type="text" placeholder="Busque aquí">
+                            <div id="map"></div>
+                            <button id="boton">Guardar ubicación</button>
+                          </div>
+
+                        </div>
+                    </div>
+                    
+                </article>
+            </section>
+        </section>
+
+    <!--Gestionar Perfil-->
+        
+        <section class="perfilSeccion content">
+           <section id="perfilGeneral">
+            <section class="miPerfil">
+                <span >Mi Perfil</span>
+                <div id="myModal" class="modal">
+                    <div id="modal-content">
+                        <span class="close-button">&times;</span>
+                        <div id="listaSolicitudesModal">
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="datosMostrados">
+                <article class="textFieldHolder">
+                    <input id = "nombrePerfil" class="casillaDatos" placeholder="Nombre" disabled />
+                    <label class="soloMostrar">Nombre</label>
+                </article>
+                
+                
+                <article class="textFieldHolder">
+                    <input id = "apellidoPerfil" class="casillaDatos" placeholder="Apellido" disabled/>
+                    <label class="soloMostrar">Apellido</label>
+                </article>
+                <article class="textFieldHolder">
+                    <input id="correoPerfil" class="casillaDatos" placeholder="Correo" disabled/>
+                    <label class="soloMostrar">Correo</label>
+                </article>
+                <article class="textFieldHolder" >
+                    <input id="fechaDeNacimientoPerfil" class="casillaDatos" placeholder="Fecha De Nacimiento" disabled/>
+                    <h1 id="textoFechaNacimiento" style="margin:0; font-size: 14px; color:#E87229;">Fecha Nacimiento (+18,-100)</h1>
+                    <input type="date" id="nuevaFechaPerfil" />
+                    <label class="soloMostrar" id="soloMostrarTexto">Fecha de nacimiento</label>
+                </article>
+
+                
+                <article style="display: none;" id="cambiarContraseniaNueva" class="textFieldHolder">
+                    <input id = "nuevaContrasenia" class="casillaDatos" placeholder="Nueva Contraseña"/>
+                    <label class="soloMostrar">Nueva Contraseña</label>
+                </article>
+                <article style="display: none;" id="cambiarContraseniaActual" class="textFieldHolder">
+                    <input style="margin-bottom: 2px;" id="contraseniaActual" class="casillaDatos" placeholder="Contraseña Actual"/>
+                    <label class="soloMostrar">Contraseña Actual</label>
+                    <h1  style="margin: 0; margin-bottom: 2px; font-size: 10px; color:#E87229;">* Coloque la Contraseña Actual en caso <br>de cambio de contraseña</h1>
+                </article>
+
+                
+                    <section id="botonesGuardarCancelar">
+                        <button  id="botonGuardarCambiosPerfil"> Guardar <img class="iconosBotonesModificar" src="../Imagenes/guardar.png"></button>
+                        <button  id="botonCancelarCambiosPerfil">Cancelar <img class="iconosBotonesModificar" src="../Imagenes/XCancelar.png"></button>
+                    </section>
+                    
+                    <button id="botonEditarCambiosPerfil"> Editar Perfil <img class="iconosBotonesModificar" src="../Imagenes/IconoEditar.png"></button>
+                    <button id="botonEliminarPerfil"> Eliminar Perfil <img class="iconosBotonesModificar" src="../Imagenes/papelera.png"></button>
+                    <br>
+                    <h1 class="error-message" id="errorEditarPerfil" style="display: none;"></h1>
+
+            </section>
+            <!-- lista de mascotas publicadas -->
+            <section class="miPerfil">
+                <span >Mis mascotas</span>
+            </section>
+            <section class="listaMascotas">
+                <!-- en el caso de que haya mascotas -->
+                
+            </section>
+            <!-- lista de solicitudes realizadas -->
+            <section class="miPerfil">
+                <span >Mis anuncios</span>
+            </section>
+            <!-- en el caso en el que hayan solicitudes -->
+            <section class="listaAnuncios">
+
+            </section>
+            <section class="miPerfil">
+                <span >Mis solicitudes</span>
+            </section>
+            <!-- en el caso en el que hayan solicitudes -->
+            <section class="listaSolicitudes">
+                <section class="miSolicitudTotal">    
+                    
+                </section>
+            </section>
+            
+           </section>
+              <!--Consultar Solicitud-->
+           <section id="solicitudConsultada">
+                <div class="container-headerConsultar">
+                    <span class="botonRegresar" id="btnRegresarPerfil"></span>
+                    <p><span class="icono-flecha"></span></p>
+                    <h1 id="tituloConsultarSolicitud">Solicitud de Adopción</h1>
+                </div>
+
+                <div class="container-consultar">
+                    <div class="container informacionMascota">
+                        <div class="container-izquierda">
+                            <h3 id="nombreMascota"></h3>
+                            <div class="informacionMascota-img"> </div>
+                            <img>
+                        </div>
+                        <div class="container-texto">
+                                <h6></h6>
+                                <p class="especie"></p>
+                                <h6>Ubicación</h6>
+                                <p class="ubicacion"></p>
+                                <h6>Edad</h6>
+                                <p class="edad"></p>
+                        </div>
+                    </div>
+                </div>  
+
+                    <div  class="container respuestasSolicitud">
+                    <h3 id="tituloRespuestas">Respuestas</h3>
+                    <h6>¿En que tipo de vivienda reside?</h6>
+                    <p class="tipoVivienda"></p>
+                    <h6>La vivienda es</h6>
+                    <p class="viviendaPropia"></p>
+                    <h6>En caso de que viva de alquiler, ¿tiene conocimiento el dueño/a de la vivienda de que va usted a adoptar a un animal y está de acuerdo con ello?</h6>
+                    <p class="alquilado"></p>
+                    <h6>¿Cuenta con Jardin?</h6>
+                    <p class="jardin"></p>
+                    <h6>Si trabaja actualmente, ¿qué horario laboral tiene?</h6>
+                    <p class="horario"></p>
+                    <h6>Si se va de vacaciones, ¿qué pasaría con la mascota?</h6>
+                    <p class="vacaciones"></p>
+                    <h6>¿Por qué se decide a adoptar a un animal?</h6>
+                    <p class="razonAdopcion"></p>
+                    <h6>De su familia, ¿quién sería el responsable de la mascota?</h6>
+                    <p class="responsable"></p>
+                    <h6>¿Comparten la decisión de adoptar una mascota el resto de miembros del hogar?</h6>
+                    <p class="compartenDecision"></p>
+                    <h6>¿Dónde dormirá la mascota?</h6>
+                    <p class="sleepPlace"></p>
+                    <h6>¿Tiene actualmente otros animales en casa?</h6>
+                    <p class="animalesActuales"></p>
+                    <h6>En caso de que así sea, cuéntenos algo de ellos</h6>
+                    <p class="infoMascotas"></p>
+                    <h6>¿Qué carácter desea que tenga la mascota?</h6>
+                    <p class="caracterMascota"></p>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+    </section>
+
+    <!--Eliminar Perfil Abraham Nuevo-->
+    <section class="eliminarPerfil" style="display: none;">
+        <section class="datosEliminarCuenta">
+            <button id="botonVolver"><img id="iconoBotonVolver" src="..//Imagenes/volver.png"></button>
+            <h1 style="font-size: 18px; color: #E87229;">Por favor ingrese su contraseña para continuar</h1>
+            <article class="textFieldHolder">
+                <input style="max-width: 400px;" id = "correoEliminarPerfil" class="casillaDatos" placeholder="Correo" disabled/>
+                <label class="soloMostrar">Correo</label>
+            </article>
+
+            <article class="textFieldHolder">
+                <input style="max-width: 400px;" id = "contraseñaEliminarPerfil" class="casillaDatos" placeholder="Contraseña"/>
+                <label class="soloMostrar">Contraseña</label>
+            </article>
+            <h1 style="color: red; font-size: 15px; display: none;" id="errorContraseniaIncorrectaEliminarPerfil">Lo Sentimos, la contraseña no es correcta.</h1>
+            <button id="botonAceptarEliminarPerfil" >Aceptar<img class="iconosBotonesModificar" src="../Imagenes/check.png"></button>
+            <br>
+            <hr class="tituloMascotanueva">
+            <section id="confirmarEliminarPerfil" style="display: none;">
+                <h1 id="mensajeConfirmarEliminarPerfil">¿Está seguro que desea eliminar el Perfil?</h1>
+                <button id="botonConfirmarEliminarPerfil">Confirmar<img class="iconosBotonesModificar" src="../Imagenes/dobleCheck.png"></button>
+            </section>
+        </section>
+    </section>
+    <!----------------------------------------------------->
+    <!--Modificar Mascotaa Nuevo-->
+    <section class="modificarMascota">
+        <section class="modificarMascotaDatos">
+            <article class="modificarMascotaExistente">
+                <section class="tituloModificarMascota">
+                    <h1>Modificar Datos Mascota</h1>
+                    <hr class="tituloModificarMascota">
+                </section>
+                <section class="contenidoModificarMascota">
+                    <section class="datosModificarMascotaIzquierda" >
+                        <article id="fotoModificarMascota">
+                            <label id="labelCambiarImagen" for="modificarImagenMascotaNueva">
+                                <img id="imagenPreviewModificar" src="../Imagenes/defaultImagen.png" alt="Imagen de la mascota"  />
+                            </label>
+                            <input type="file" name ="modificarImagenMascotaNueva" id ="modificarImagenMascotaNueva" accept="image/*" data-default-image="../Imagenes/defaultImagen.png" >
+                        </article>
+
+                        <article id="home3">
+                            <article class="textFieldHolder2">
+                                <h1 style="font-size: 15px; margin-top: 10px; margin-bottom: 0; color: #74C69D;">Nombre</h1>
+                                <input style="margin-top: 0;" id="indiqueModificarNombreMascota"/>
+                            </article>
+
+                            <article class="textFieldHolder2">
+                                <div id="input-with-icon-modificar">
+                                   <i class="fas fa-map-marker-alt"></i> 
+                                  <h1 style="font-size: 15px; margin-top: 10px; margin-bottom: 0; color: #74C69D;">Ubicacion</h1>
+                                  <input style="margin: 0;" id="ubicacionModificarMascota"/>
+                                </div>
+                                <label>Ubicacion</label>
+                            </article>
+                        </article>
+                          
+                    </section>
+                    <section class="datosModificarMascotaDerecha" >
+                        <h1 style="font-size: 15px; margin-top: 5px; margin-bottom: 0; color: #74C69D;">Color</h1>
+                            <select style="margin-top: 0;" id="colorModificarMascota" class="inputlargos">
+                                <option disabled selected>Selecciona el Color</option>
+                                <option value="Marron">Marrón</option>
+                                <option value="Amarillo">Amarillo</option>
+                                <option value="Blanco">Blanco</option>
+                                <option value="Negro">Negro</option>
+                                <option value="Gris">Gris</option>
+                                <option value="Verde">Verde</option>
+                            </select>
+                        <select style="margin-top: 10;" id="especieModificarMascota" type="list" class="inputlargos" name="especieModificarMascota">
+                            <option disabled selected>Selecciona la Especie</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Ave">Ave</option>
+                            <option value="Roedor">Roedor</option>
+                        </select>
+                        
+                        <h1 style="font-size: 15px;  margin-bottom: 0; color: #74C69D; margin-top: 5px;">Raza</h1>
+                        <select style="margin-top: 0;" id="razaModificarMascota" class="inputlargos">
+                            <option disabled selected value="Raza">Selecciona la Raza</option>
+                        </select>
+                        <h1 style="margin: 0px; margin-left: 5px; font-style: italic; color: darkcyan;">*Primero elige la Especie</h1>
+                        
+                        <article style="margin-top: 12px;">                            
+                            <select style="margin-top: 0;" id="periodoModificarMascota" class="inputcortos">
+                                <option disabled selected>Período</option>
+                                <option value="Años">Años</option>
+                                <option value="Meses">Meses</option>
+                            </select>                            
+                            <select style="margin-top: 0;" id="edadModificarMascota" class="inputcortos">
+                                <option disabled selected>Edad</option>
+                            </select>
+                            <h1 style="margin: 0px; margin-left: 5px; font-style: italic; color: darkcyan;">*Primero elige la Especie, luego el Período y de Ultimo la Edad</h1>
+                        </article>
+                        
+                        <h1 style="font-size: 15px; margin-top: 10px; margin-bottom: 0; color: #74C69D;">Tipo de Mascota</h1>
+                        <select style="margin-top: 0;" id="tipoModificarMascota" class="inputlargos">
+                            <option disabled selected>Selecciona el Tipo</option>
+                            <option value="Callejera">Callejera</option>
+                            <option value="Propia">Propia</option>
+                            <option value="Extraviada">Extraviada</option>
+                        </select>
+                        
+                        
+                    </section>
+
+                    <div id="popupModificar" class="popup">
+                        <div class="popup-content">
+                          <span id="close-button-modificar">&times;</span>
+                          <h2>Mapa de Ubicación</h2>
+                          <div class="containerMapa">
+                            <input id="search-input-modificar" type="text" placeholder="Busque aquí">
+                            <div id="mapModificar"></div>
+                            <button id="botonModificarUbicacion">Guardar ubicación</button>
+                          </div>
+                        </div>
+                    </div>
+
+                    <section  class="descripcionModificarMascota">
+                            <textarea id="descripcionModificarMascota" rows="5" cols="75"  style="resize: none;"></textarea>
+                    </section>
+                    <h1 id="mensajeErrorModificarMascota" style="display: none; font-size: 15px; color: rgb(204, 28, 28); margin-top: 20px; cursor: default;">Lo sentimos. Debe Rellenar todas las casillas.</h1>
+
+                    
+                    <button id="botonModificarMascota" class="botonModificarMascota">Guardar</button>
+                </section>
+                
+            </article>
+        </section>
+    </section>
+
+        <!--Modificar Solicitud-->
+        <section class="modificarSolicitud">
+            <article class = "modificarSolicitudExistente">
+                <!-- <section id="solicitudEscondida"> -->
+                    <div class="container-solicitud-modificar">
+                        <div class="heading-modificar">
+                        <h1 id="title-modificar">Modifique su Formulario de Adopción</h1>
+                        <h3 id="subheading-modificar">El objetivo de este cuestionario es encontrar
+                        la combinación perro-amo óptima, de manera que ambos sean felices
+                        tras la adopción.</h3>
+                        </div>
+    
+                        <form id="formulario-modificar">
+                        <div class="contenido vivienda">
+                            <h4>Vivienda</h4>
+                        <div id="TipoVivienda-modificar">
+                            <label class="required-label">¿En que tipo de vivienda reside?</label> <br><br>
+                            <div id="opcionesTipoVivienda-modificar">
+                                <select id="selectTipoViviendaModificada" required>
+                                    <!-- <option name="Seleccione una opcion">Seleccione una opcion</option> -->
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>  
+                        </div>
+    
+                        <div id="infoVivienda-modificar"><br>
+                            <label id="radioInfoViviendaModificada" class="required-label">La vivienda es</label><br><br>
+                            <input type="radio" name="grupoOpcionesInfoVivienda" value="Propia" id="propiaModificado" class="casilla modificar" required>&nbsp&nbsp&nbspPropia<br><br>
+                            <input type="radio" name="grupoOpcionesInfoVivienda" value="Alquilada" id="alquilerModificado" class="casilla modificar">&nbsp&nbsp&nbspAlquiler<br><br>
+                        </div>
+    
+                            <div>
+                            <label id="radioLandlordModificado" class="required-label">En caso de que viva de alquiler, ¿tiene conocimiento el dueño/a de la vivienda de que va usted a adoptar a un animal y está de acuerdo con ello?</label><br><br>
+                            <input type="radio" class="grupoOpciones3" name="grupoOpcionesLandlordModificado" value="Si" id="landlordModificado" class="casilla modificar"required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" class="grupoOpciones3" name="grupoOpcionesLandlordModificado" value="No" id="landlordNoModificado" class="casilla modificar">&nbsp&nbsp&nbspNo<br><br>
+                            <input type="radio" class="grupoOpciones3" name="grupoOpcionesLandlordModificado" value="No Aplica" id="noAplicaAlquilerModificado" class="casilla modificar">&nbsp&nbsp&nbspNo Aplica<br><br>
+                            </div> 
+    
+                            
+                        <div id="jardin-modificar">
+                            <label id="radioJardinModificado" class="required-label">¿Cuenta con Jardin?</label><br><br>
+                            <input type="radio" name="grupoOpcionesJardinModificado" value="Si" id="jardinModificado" class="casilla modificar" required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" name="grupoOpcionesJardinModificado" value="No" id="noJardinModificado" class="casilla modificar" >&nbsp&nbsp&nbspNo<br><br>
+                            </div>
+                        </div> 
+    
+                        <div class="contenido tiempo"> 
+                            <h4>Ocupacion/Tiempo Libre</h4>
+                            <div class="contenido-tiempo">
+                            <label class="required-label">Si trabaja actualmente, ¿qué horario laboral tiene?</label><br><br>
+                            <input autocomplete="off" type="text" name="horario" placeholder="..." class="box casilla modificar" id="horarioLaboralModificado" required><br><br>
+                            <label class="required-label">Si se va de vacaciones, ¿qué pasaría con la mascota?</label><br><br>
+                            <textarea autocomplete="off" name="vacaciones" placeholder="..." class="box casilla modificar" id="vacacionesMascotaModificado" required></textarea><br><br>
+                            </div>
+                        </div> 
+    
+                    <div class="contenido adopcion">
+                        <h4>Sobre la adopción</h4>
+                        <div class="contenido-adopcion">
+                            <label class="required-label">¿Por qué se decide a adoptar a un animal?</label><br><br>
+                            <textarea autocomplete="off" type="text" name="razon" placeholder="Por compañía, para cría, para caza, como guardián, como terapia, regalo,..." class="box casilla modificar" id="razonAdopcionModificado" required></textarea><br><br>
+                            <label class="required-label">De su familia, ¿quién sería el responsable de la mascota?</label><br><br>
+                            <textarea autocomplete="off" type="text" name="responsable" placeholder="Usted, su madre, su padre, ..." class="box casilla modificar" id="responsableMascotaModificado" required></textarea><br><br>
+                            <label class="required-label">¿Comparten la decisión de adoptar una mascota el resto de miembros del hogar?</label><br><br>
+                            <input type="radio" name="grupoOpcionesDecisionModificado" value="Si" id="CompartenDecisionModificado" class="casilla modificar" required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" name="grupoOpcionesDecisionModificado" value="No" id="NoCompartenDecisionModificado" class="casilla modificar">&nbsp&nbsp&nbspNo<br><br>
+                            <label class="required-label">¿Dónde dormirá la mascota?</label><br><br>
+                            <textarea autocomplete="off" type="text" name="sleeping" placeholder="En su camita en el interior, en la cama del amo, en el corredor, en una caseta en el exterior, en una jaula..." class="box casilla modificar" id="lugarDormirModificado" required></textarea><br><br>
+                            <label class="required-label">¿Tiene actualmente otros animales en casa?</label><br><br>
+                            <input type="radio" name="grupoOpcionesAnimalesModificado" value="Si" id="animalesModificado" class="casilla modificar" required>&nbsp&nbsp&nbspSi<br><br>
+                            <input type="radio" name="grupoOpcionesAnimalesModificado" value="No" id="noAnimalesModificado"  class="casilla modificar">&nbsp&nbsp&nbspNo<br><br>
+                            <label>En caso de que así sea, cuéntenos algo de ellos</label><br><br>
+                            <textarea autocomplete="off" type="text" name="informacionMascotasActuales" placeholder="Cuántos son y de qué especie, qué raza son, de qué edad, de qué sexo, qué carácter tienen" class="box casilla modificar"  id="infoOtrasMascotasModificado" required></textarea><br><br>
+                            <label class="required-label">¿Qué carácter desea que tenga la mascota?</label><br><br>
+                            <input autocomplete="off" type="text" name="caracter" placeholder="Tranquilo, activo, cariñoso, independiente..." class="box casilla modificar" id="caracterMascotaModificado" required><br><br>          
+                        </div>
+                    </div>
+                        </form>
+    
+                        <div class="finalSolicitud-modificar">
+                        <div class="condiciones-modificar">
+                            <h2>Importante</h2>
+                            <input type="checkbox" name="condicion1" class="larger" id="cbCondicion1" required>
+                            <label>Una vez recibido el cuestionario de pre-adopción, el Propretario de la mascota y/o Fundacion acargo es quien decide si se tramita la adopción o no. 
+                                Si la decisión es afirmativa, el adoptante asumirá las condiciones de adopción que la Protectora tenga establecidas.</label><br><br>
+                            <input type="checkbox" name="condicion2" class="larger" id="cbCondicion2" required>
+                            <label>Una vez modifique la solicitud de adopción, le llegara un correo al dueño de la mascota indicando sus cambios.</label>
+                        </div>
+                        <div class="botonesSolicitud-modificar">
+                            <!-- <button><h3>Enviar</h3></button> -->
+                            <button type="submit" form="formulario-modificar" id="botonGuardarCambiosSolicitud"><h3>Guardar Cambios</h3></button>
+                            <button id="btnRegresarSolicitud2"><h3>Volver</h3></button>
+                        </div>
+                        </div>
+                    </div>
+    
+                <!-- </section> -->
+            </article>
+        </section>
+
+    <!--Bandeja Inferior-->
+    <footer>
+        <section>
+            <a id="irComienzo" href="#titulo">Ir al Comienzo</a>
+            <a href="mailto:abrahamcarranza2602@gmail.com">Contactame Aqui</a>
+        </section>
+        <p>Copy Right 2024</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../Eventos/EventosPrincipal.js" type = "module"></script>
+    <script src="../../Controlador/ControladorPrincipal.js" type="module" ></script>
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyATJVvC-Eu145xOQRJwCs4JA_NBwqcIPDo", v: "weekly"});</script>
+
+</body>
+</html>
